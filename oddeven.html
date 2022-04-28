@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <input type="number" id="per" placeholder="percentage "><br> 
+          <input type="number" id="marks" placeholder="marks of maths"><br> 
+          <button onclick="find()">Find</button>
+          <script>
+                    function find(){
+                    var x=Number (document.getElementById("per").value);
+                              var y=Number (document.getElementById("marks").value);
+                          if(x>=80)
+                          {
+                                    if(y>=80)
+                                    {
+                                              console.log("you are best");
+                                    }
+                                    if(x<80)
+                                   {
+                                              console.log("you are simply best");
+                                    }
+                                    else
+                                    {
+                                              console.log("normaly fail");
+                                    }
+                              }
+                    }
+          </script>
+</body>
+</html>

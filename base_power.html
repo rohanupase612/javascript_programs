@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <input type="number" id="base" placeholder="BASE">
+          <input type="number" id="power" placeholder="POWER">
+          <button onclick="calculate()"></button>
+          <script>
+                    function calculate()
+                    {
+                              var base= Number(document.getElementById("base").value);
+                              var power= Number( document.getElementById("power").value);
+                              var mul = 1;
+                              while(power>0)
+                              {
+                                       mul=mul*base;
+                                       power--;
+                              }
+                              document.write(mul);
+                    }
+                    
+          </script>
+</body>
+</html>

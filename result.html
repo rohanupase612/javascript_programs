@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <input type="text" id="class1">
+          <input type="number" id="sub">
+          <button onclick="calculate()">Click me</button>
+          <script>
+
+          
+               function calculate()
+                    {
+                              var grade = document.getElementById("class1").value;
+                              var sub = document.getElementById("sub").value; 
+                              var res;
+                              if(grade== "first")
+                              {
+
+                                   if(sub>3)
+                                   {
+                                        res= 1;
+                                        // document.write("Student does not get any grace marks");
+                                   }
+                                   else
+                                   {
+                                        res= 2;
+                                        // document.write("Student get 5 marks per subject");
+                                   }
+                                
+
+                              }
+                              else if(grade=="second")
+                              {
+
+                                   if(sub>2)
+                                   {
+                                        res=3;
+                                        // document.write("does not get any grace marks");
+                                   }
+                                   else
+                                   {
+                                        res=4;
+                                        // document.write(" grace marks 4 per subject");
+                                   }
+                              }
+                              else
+                              {
+
+                                   if(sub>1)
+                                   {
+                                        res=5;
+                                        // document.write("grace marks 4 per subject");
+                                   }
+                                   else
+                                   {
+                                        res=6;
+                                        // document.write("does not get any grace marks")
+                                   }
+                              }
+                    
+                    switch(res){
+
+                         case 1:
+                               document.write("Student does not get any grace marks");
+                         break;
+
+                         case 2:
+                                document.write("Student get 5 grace marks per subject");
+                         break;
+
+                         case 3:
+                               document.write("does not get any grace marks");
+                         break;
+
+                         case 4: 
+                               document.write(" grace marks 4 per subject");
+                         break;
+
+                         case 5: 
+                               document.write("grace marks 4 per subject");
+                         break;
+
+                         case 6: 
+                               document.write("does not get any grace marks")
+                         break;
+
+                         default:
+                              alert("Enter Valid choice")
+                    }
+               }
+          </script> 
+</body>
+</html>

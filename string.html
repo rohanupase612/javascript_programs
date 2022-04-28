@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <input type="time" id="intime">
+          <input type="time" id="outtime">
+          <button onclick="calculate()">Check</button>
+          <div id="check"></div>
+          <script>
+                    function calculate()
+                    {
+                              var intime =(document.getElementById("intime").value);
+                              var outtime =(document.getElementById("outtime").value);
+                              var diff1 = intime. split(":");
+                             // alert(diff1[0]);
+                              //var diff2 = "outtime";
+                              var diff2 = outtime. split(":");
+                             // alert(diff2[0]);
+                              var wt=60*( Number(diff2[0])-Number(diff1[0]));
+                              var mt= Number(diff2[1])-Number(diff1[1]);
+                              alert(wt+mt+"Minutes");
+
+                    }
+                    // let a = "Hello Welcome to programming world";
+                    // let b = "Welcome";
+                    // console.log("string : " +a);
+                    // console.log("length : "+ a.length);
+                    // console.log("slice : "+ a.slice(6,-4));
+                    // console.log("substring: "+ a.substring(6, -19));
+                    // // console.log("substr: "+ a.substr(6, 24));
+                    // let x= ("16/01/1997");
+                    // x=x.split("/");
+                    // console.log(x[0]);
+                    // console.log(x[1]);
+                    // console.log(x[2]);
+          </script>
+</body>
+</html>

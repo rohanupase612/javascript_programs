@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <script src="cookie.js"></script>
+</head>
+
+<body>
+          <select name="" id="cname">
+                    <option value="name">Name</option>
+                    <option value="email">E-mail</option>
+                    <option value="Mobileno">Mobile No.</option>
+          </select>
+          <input type="text" id="cvalue">
+          <button onclick="set()">SET</button>
+          <button onclick="get()">GET</button>
+          <button onclick="clearmycookie()">CLEAR</button>
+          <div id="divcookie"></div>
+          <script>
+                    function set() 
+                    {
+                              var cname= document.getElementById("cname").value;
+                              var cvalue= document.getElementById("cvalue").value;
+                              setcookie(cname, cvalue);
+                              // var expdate= new Date();
+                              // expdate.setDate(expdate.getDate()+10);
+                              // document.cookie= cname+"="+cvalue+";expires="+expdate.toString();
+                              
+                    }
+
+                    function get() 
+                    {
+                              
+                              var cname= document.getElementById("cname").value;
+                              // var cvalue="";
+                              // var cookie = document.cookie;
+                              // console.log(cookie);
+                              // if(cookie.length>0){
+                              //           var start= cookie.indexOf(cname+"=");
+                              //           if(start != -1){
+                              //           start+= cname.legnth+1;
+                              //           var end= cookie.indexOf(";",start)
+                              //           if(end== -1)
+                              //           {
+                              //                     end= cookie.length;
+                              //           }
+                              //           cvalue=cookie.substring(start,end);
+                              // }
+                              // }
+                              document.getElementById("divcookie").innerHTML=getcookie(cname);
+                    }
+
+                    function clearmycookie() 
+                    {
+                              var cname= document.getElementById("cname").value
+                              // var cvalue= "";
+                              // var expdate= new Date();
+                              // expdate.setDate(expdate.getDate()-10);
+                              // document.cookie= cname+"="+cvalue+";expires="+expdate.toString();
+                              clearmycookie(cname);
+                    }
+
+          </script>
+
+</body>
+
+</html>

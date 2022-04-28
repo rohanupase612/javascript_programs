@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <label for="">Name: </label>
+          <input type="text" id="name" placeholder="Enter your Name">  <label for="" id="msgname"></label> <br> <br>
+          <label for="">E-mail : </label>
+          <input type="email" id="mail" placeholder="Enter your E-mail"> <label for="" id="msgname"></label> <br> <br>  
+          <label for="">Mob. No : </label>
+          <input type="number" id="num" placeholder="Enter your Number"> <label for="" id="msgname"></label> <br> <br>  
+          <button onclick="get()">Show</button> 
+          <div id="call1"></div>
+          <div id="call2"></div>
+          <div id="call3"></div>
+          <script>
+                    function get()
+                    {
+                              var name= document.getElementById("name").value;
+                              var mail= document.getElementById("mail").value;
+                              var number= document.getElementById("number").value;
+
+                              document.getElementById("call1").innerText="Name"+name;
+                              document.getElementById("call2").innerText="E-mail"+mail;
+                              document.getElementById("call3 ").innerText="+Mob. No : "+number;
+
+                    }
+          </script>
+</body>
+</html>

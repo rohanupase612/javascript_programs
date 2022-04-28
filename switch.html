@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body style="text-align: center; padding: 10px; border: 2px solid black">
+          <H4>1 : ADDITION</H4>
+          <H4>2 : SUBSTRACTION</H4>
+          <H4>3 : FOR MULTIPLICATION</H4>
+          <H4>4 : FOR DIVISION</H4>
+          <input type="number" placeholder="ENTER NO" id="no1"><br><br>
+          <input type="number" placeholder="ENTER NO" id="no2"><br><br>
+          <input type="number" placeholder="ENTER YOUR CHOICE" id="choice"><br><br>
+          <button onclick="find()">Click me</button>
+                    <script>
+                              function find()
+                              {
+                                        var no1=Number (document.getElementById("no1").value);
+                                        var no2=Number (document.getElementById("no2").value);
+                                        var ch= Number (document.getElementById("choice").value);
+                                        var res;
+                            
+                              switch(ch){
+                                        case 1 : res=no1+no2;
+                                                   console.log("Addition is: "+res);
+                                                  break;
+                                        case 2 : res= no1-no2;
+                                                  document.write("Substraction is: "+res);
+                                                  break;
+                                        case 3 : res= no1*no2;
+                                                  document.write("Multiplication is: "+res);
+                                                  break;
+                                        case 4 : res= no1/no2;
+                                                  document.write("Division is: "+res);
+                                                  break;
+                                        default :
+                                                  alert("Enter Valid Choice");
+                                               
+                                                  
+
+                              }
+                              }
+                    </script>
+          
+</body>
+</html>

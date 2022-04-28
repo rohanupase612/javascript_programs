@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <input type="number" id="ram" placeholder="Enter age of Ram">
+          <input type="nummber" id="shyam" placeholder="Enter age of Shyam">
+          <input type="number" id="harsh" placeholder="Enter age of Harsh">
+          <button onclick="search()">Find </button>
+          <script>
+
+                    function search()
+                    {
+                              var ram = document.getElementById("ram").value;
+                              var shyam = document.getElementById("shyam").value;
+                              var harsh = document.getElementById("harsh").value;
+                    
+                              if(ram<shyam)
+                              {
+                                        if(ram<harsh)
+                                        document.write("ram is younger");
+                              
+                              }
+                              else if(shyam<harsh)
+                              {
+                                        document.write("shyam is younger");
+                              }
+                              else
+                              {
+                                        document.write("Harsh is younger");
+                              }
+                    }
+
+          </script>
+
+</body>
+</html>

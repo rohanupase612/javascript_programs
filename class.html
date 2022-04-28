@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    .male{
+                              color:deeppink ;
+                    }
+                    .female{
+                              color: rgb(240, 3, 3);
+                    }
+          </style>
+</head>
+<body>
+          <p class="male">Lorem ipsum dolor, sit amet consecteturadipisicing elit. Nesciunt autem accusantium consequatur harum fugiat, modi, consequuntur eaque natus explicabo molestias placeat fuga ducimus cumque cum consectetur corporis quos aspernatur est.</p>
+          <p class="female">Lorem ipsum dolor, sit amet consectetur dipisicing elit. Nesciunt autem accusantium consequatur harum fugiat, modi, consequuntur eaque natus explicabo molestias placeat fuga ducimus cumque cum consectetur corporis quos aspernatur est.</p>
+          <p class="male">Lorem ipsum dolor, sit amet consectetur aipisicing elit. Nesciunt autem accusantium consequatur harum fugiat, modi, consequuntur eaque natus explicabo molestias placeat fuga ducimus cumque cum consectetur corporis quos aspernatur est.</p>
+          <button onclick="find()">Find</button>
+          <button onclick="findmales()">Find males</button>
+          <button onclick="findfemales()">Find Females</button> <br> <br> <br>
+          <label for="male"><input type="radio" id="male" name="gender">
+            MALE</label> 
+            <label for="female"> <input type="radio" id="female" name="gender">
+         FEMALE</label>
+         <label for="other"> <input type="radio" id="other" name="gender">
+         OTHER</label>
+         <br>      <br>
+         <button>Submit</button>
+
+          <script>
+                    function find()
+                    {
+                              let p=document.getElementsByTagName("p");
+                              // console.log(p.length)
+                              for(let i=0; i<p.length;i++)
+                              {
+                                        console.log(p[i].innerText)
+
+                              }
+
+                    }
+                    function findmales(){
+                              let p=document.getElementsByClassName("male");
+                              for(let i=0; i<p.length;i++)
+                              {
+                                        console.log(p[i].innerText)
+
+                              }
+
+                    }
+
+                    function findfemales()
+                    {
+                              let p=document.getElementsByClassName("female");
+                             for(let i=0; i<p.length;i++)
+                              {
+                                        console.log(p[i].innerText)
+
+                              }
+                              
+                    }
+          </script>
+</body>
+</html>
